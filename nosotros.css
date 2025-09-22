@@ -1,0 +1,40 @@
+body{
+ background-color: black;
+}
+.difundir{
+    font-family: fantasy;
+    color: aliceblue;
+    font: size 50px;
+}
+.Ofrecer{
+    font-family: fantasy;
+    color: beige;
+    font-size: 70px;
+
+}
+.facilitar{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blanchedalmond;
+    font-size: 100px;
+
+
+}
+.us{
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 150px;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+a{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover{
+    color: coral;
+    
+}

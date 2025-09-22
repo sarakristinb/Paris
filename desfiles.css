@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #000000;
+  color: #000000;
+  line-height: 1.6;
+}
+
+h2, h3 {
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.desfiless{
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.intro {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #535353;
+}
+
+.cartas {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 32px;
+  padding: 0 32px;
+}
+
+.carta {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.carta:hover {
+  transform: scale(1.05);
+}
+
+.carta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.carta h3 {
+  text-align: center;
+  font-size: 22px;
+  margin: 16px 0;
+  color: #000000;
+}
+
+.carta figcaption {
+  font-size: 16px;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+.carta p {
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  color: #6b6b6b;
+}
+
+.video-block{
+  background-color: white;
+  border-radius: 10px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+video, audio {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 10px;
+}
+
+#gallery {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.gallery-grid figure {
+  margin: 0;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #f2a365;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+center {
+  margin: 32px 0;
+}
+
+@media (max-width: 768px) {
+  .cartas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carta {
+    width: 80%;
+    margin-bottom: 32px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2, h3 {
+    font-size: 20px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+}

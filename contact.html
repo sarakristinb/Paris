@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+     <section id="contact" class="container">
+      <h2 id="contact-title">Contacto</h2>
+      <p>Si eres prensa, reperesentante o público y necesitas más información, contáctanos.</p>
+
+      <form id="contact-form" action="" method="post" novalidate>
+        <fieldset>
+          <legend>Formulario de contacto</legend>
+
+          <label for="name">Nombre completo</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required minlength="2" />
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+
+          <label for="role">¿Quién eres :b?</label>
+          <select id="role" name="role" required>
+            <option value="">Selecciona</option>
+            <option value="prensa">Prensa</option>
+            <option value="representante">Representante</option>
+            <option value="publico">Público</option>
+          </select>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" placeholder="indica tu consulta" required></textarea>
+
+          <div class="form-act">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-inner container">
+      <p>&copy; Paris Fashion Week 2025 —Derechos reservados.</p>
+      <nav>
+        <ul class="redes sociales">
+          <li><a href="https://twitter.com/search?q=%23parisfashionweek" aria-label="Twitter">Twitter</a></li>
+          <li><a href="https://www.instagram.com/parisfashionweek/" aria-label="Instagram">Instagram</a></li>
+          <li><a href="https://www.facebook.com/ParisFashionWeek/?locale=es_LA" aria-label="Facebook">Facebook</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
